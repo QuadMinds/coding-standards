@@ -1,4 +1,5 @@
-# Quadminds Technologies - Codign Standards 
+# Quadminds Technologies - Codign Standards
+
 Quadminds Coding Standards is a collaborative repo of code guidelines with some of the team's conventions.
 
 ## Table of Contents
@@ -6,34 +7,32 @@ Quadminds Coding Standards is a collaborative repo of code guidelines with some 
 1. [Introduction](#introduction)
 2. [Why Coding Standards?](#why-coding-standards?)
 3. [Naming](#naming)
-4. [ESLint](#eslint)
-   1. [Casing](#casing)
-   2. [File names](#file-names)
-5. [Coding](#coding)
-6. [Formatting](#formatting)
-7. [Comments](#comments)
-8. [TypeScript](#typescript)
-9. [GIT](#git)
+4. [Coding](#coding)
+5. [Formatting](#formatting)
+6. [Comments](#comments)
+7. [GIT](#git)
    1. [Branches](#branches)
    2. [Commit messages](#commit-messages)
    3. [Code Reviews](#code-reviews)
-10. [Node.js](#node.js)
-11. [Recommended Frameworks](#recommended-frameworks)
-   1. [React](#react)
-12. [Recommended Libraries](#recommended-libraries)
-13. [Definition of Done Checklist](#definition-of-done-checklist)
-14. [Development environment](#development-environment)
+8. [Node.js](#node.js)
+9. [Recommended Frameworks](#recommended-frameworks)
+10. [React](#react)
+11. [Recommended Libraries](#recommended-libraries)
+12. [Work Agreements](#work-agreements)
+13. [Development environment](#development-environment)
     1. [VSCode](#vscode)
     2. [WebStorm](#webstorm)
 
-## Introduction 
-The **SaaS** repository is composed with a combination of both vanilla **PHP** and libs based on the latter.  
+## Introduction
 
-While some of these guidelines could be applied to new features developed in, the main purpose of this document is to serve as a follow up guide for projects built in newer technologies, such as the **Cloud Flash** repository and **Node.js** based applications.  
+The **SaaS** repository is composed with a combination of both vanilla **PHP** and libs based on the latter.
+
+While some of these guidelines could be applied to new features developed in, the main purpose of this document is to serve as a follow up guide for projects built in newer technologies, such as the **Cloud Flash** repository and **Node.js** based applications.
 
 ## Why Coding Standards?
 
 A coding standard gives a uniform appearance to the codes written by different members of a team.
+
 - It improves readability, and maintainability of the code and it reduces complexity also.
 - It helps in code reuse and helps to detect error easily.
 - It promotes sound programming practices and increases efficiency of the programmers.
@@ -58,10 +57,6 @@ naming with the whole team: Backend, Frontend, UX, Design, PM, client, etc.
 
 For big projects with their own jargon it could help to create a dictionary.
 
-#### Descriptive
-
-Names must be descriptive for the working or usage of the class, method or variable.
-
 ###### The name should always end with what the object is.
 
 For example: a button must always end with `Button`.
@@ -77,14 +72,16 @@ than a short name which is not clear.
 
 A name should make sense within its context and should not have unnecessary information for that
 context. For example a variable that holds the name of a user can be named `name` within a `User`
-context. However if you need to hold the name of a user in another place, `userName` might be a
+context.
+
+However if you need to hold the name of a user in another place, `userName` might be a
 better name. Adding `user` within a `User` context (`user.userName`) is redundant and should be
 avoided.
 
 #### Abbreviations
 
 Avoid them as a general rule. For example, `calculateOptimalValue()` is a better method name than
-`calcOptVal()`. Being clear is more important than minimizing keystrokes. 
+`calcOptVal()`. Being clear is more important than minimizing keystrokes.
 
 A few abbreviations that are allowed to use:
 
@@ -144,20 +141,13 @@ Should start with `is`, `has`, `will` or `should`. Like `isValid` or `hasValues`
 Avoid negations. _“Don’t ever not avoid negative logic”_. Prefer `isShown` over `isHidden` or
 `isEnabled` over `isDisabled`. Do not use names like `notEditable`.
 
-#### TypeScript Generics
-
-If the usages of the generic is obvious, then naming that generic `T` is sufficient. As long as the
-usage is clear you can use `U`, `V` etc. for any following generic.
-
-If the usage is not obvious, you should use a more descriptive name. The same naming rules as for
-classes will apply then.
-
 ### Casing ✴
-This one depends on the project beign work in. Follow the guidelenss for **Javascript** apps and completely new features developed on **Cloud Flash**.
 
-If the feature you are working on is on a **legacy** file, keep the codign style wether it makes sense. 
+This one depends on the project being work in. Follow the guidelines for **Javascript** apps and completely new features developed on **Cloud Flash**.
 
-However you should always try to avoid adding new functionality to existing files if the code style is completely different from the conventional one. Instead, create new files following the standard and reference them in older ones if needed.
+If the feature you are working on is on a **legacy** file, keep the coding style wether it makes sense.
+
+However you should **always** try to avoid adding new functionality to existing files if the code style is completely different from the conventional one. Instead, create new files following the standard and reference them in older ones if needed.
 
 #### Classes, Interfaces, Types and Generics
 
@@ -190,9 +180,9 @@ const jsonApiSdkUrl = new JsonApiSdkUrl();
 
 If a file contains only one class, type or object, or when there is one main class, type or object
 with some helper classes, types or objects, the file should have the same name, in the same casing,
-as that (main) class, type or object. 
+as that (main) class, type or object.
 
-## Coding 👨‍🚀🐱‍🏍
+## Coding
 
 Every function or class should do **one thing** (and do it good). If it needs to do more than one
 thing, split it up. Keep your files, classes and functions small. It’s okay to have a file with just
@@ -258,7 +248,7 @@ _add a comment that the default is explicit ignored_
 
 Adding the comment makes it clear the developer did not forget to implement the default.
 
-## Formatting ✨
+## Formatting
 
 All code within a project should have the same formatting. To enforce that we use
 [Prettier](https://prettier.io/).
@@ -303,10 +293,6 @@ have to be `protected` or `public`.
 
 In order to be as strict as possible, every property should be set to readonly unless it should be
 writable.
-
-#### Arrays
-
-Always prefer `ReadonlyArray` over a regular `Array` unless it must be possible to modify the Array.
 
 ## GIT
 
@@ -363,25 +349,22 @@ We recommend using [React](https://reactjs.org/) for large Single Page Applicati
 is suited for long term projects that need stable and maintainable code. React works great together
 with [TypeScript](https://www.typescriptlang.org/).
 
-### Backend - Nest 
+### Backend - Nest
 
 We recommend using [Nest](https://reactjs.org/) for building efficient, reliable and scalable server-side applications. Nest
 is suited for long term projects that need stable and maintainable code. Nest uses by default [TypeScript](https://www.typescriptlang.org/).
 
 ## Recommended libs [WIP]
 
-#### Coding
+#### PHP [WIP]
+
+### JavaScript
 
 - [axios](https://github.com/axios/axios) - Promise based HTTP client
 - [date-fns](https://www.npmjs.com/package/date-fns) - provides the most comprehensive, yet simple
   and consistent toolset for manipulating JavaScript dates
 - [i18next](https://www.npmjs.com/package/i18next) - Internationalization library
 - [Yup](https://github.com/jquense/yup) - Form validation
-
-#### TypeScript
-
-- [isntnt](https://www.npmjs.com/package/isntnt) - Composable TypeScript predicate
-- [ts-essentials](https://www.npmjs.com/package/ts-essentials) - TypeScript utilities
 
 #### React
 
@@ -394,24 +377,19 @@ is suited for long term projects that need stable and maintainable code. Nest us
 
 - [Redux](https://redux.js.org/) - A Predictable State Container for JS Apps
 
-#### PHP [WIP]
-
 #### Development [WIP]
 
+## Work Agreements
 
-## Definition of Done Checklist
-
-#### Before Starting feature
+#### Before Starting feature (Definition of Ready)
 
 - [x] Read the ticket. If no ticket is present, create one yourself or ask the Project Manager to
       create one.
 - [x] Make sure the ticket is clear and actionable. If not, reassign the ticket to the person
       responsible for the creation of the tickets (the project manager or project lead) until the
       ticket is 100% clear.
-- [x] Create a feature branch (`feature/ticket-number-feature-name` or for Jira use the default
-      branch name when creating a branch from a ticket).
 
-#### General Tasks
+#### General Tasks (Definition of Done)
 
 - [x] Double check if feature is properly working on all browsers specified in the browser matrix.
 - [x] Double check if feature is properly working on all resolutions.
@@ -423,61 +401,9 @@ is suited for long term projects that need stable and maintainable code. Nest us
 - [x] Merge latest develop into branch and see if there are no conflicts. If there are conflicts
       please ask for help if you don't know which part of the code should stay.
 - [x] Remove unnecessary comments.
-- [x] Check the name and semantics of all functions, properties, variables etc. Do they still make
-      sense? Could someone that doesn't know the code understand what it is doing?
 - [x] Read your code again. Do you think it can be done better or optimized? Do it. Start process
       again.
-- [x] Read the description of the ticket / email again. Did you really do what is asked for? Does
-      your change solve the issue?
-- [x] Run build tasks and see if they work.
 - [x] Does your project have code that isn't used anymore? Throw it away!
-- [x] Make sure all linting is passing.
-
-#### UI Task
-
-- [x] Check that
-      [HTML5 Semantic Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning)
-      are used appropriately (`header`, `section`, `footer`, `main`...).
-- [x] All images have an `alt` property
-- [x] All `<a>` have `title` property
-- [x] Check if all images are optimized (Saved for web and compressed, resized accordingly)
-- [x] Headings (`h1`, `h2`, `h3`...) are used in the correct order.
-- [x] All `input`'s have a `label`
-- [x] Check if you can navigate the website with keyboard (using tabs)
-- [x] Check if all videos are compressed correctly
-- [x] Add `aria` labels.
-- [x] Check if the fonts are being loaded properly.
-- [x] Check if images are being lazy loaded and for proper usage of picture with responsive images
-- [x] Check the `hover`, `disabled`, `invalid` and `error` states on buttons, links, form elements,
-      etc.
-
-#### Before every release
-
-- [x] Check for proper html `doctype`.
-- [x] Check for proper `viewport` tags.
-- [x] Check the site has a `title` tag.
-- [x] Check for Social sharing `meta` tags.
-- [x] Check the site `description`.
-- [x] Check the site again while throttling the internet connection. Does it still work? Do you have
-      loaders in place?
-- [x] What happens if you press the `back` button in the browser? And then the `forward` button?
-- [x] What happens if you refresh the page halfway the flow?
-- [x] What happens if you directly enter a page at the end of the flow?
-- [x] What happens if you navigate away during an async process?
-- [x] What happens if you manually change a value in the URL?
-- [x] Is there a `404`?
-- [x] Check for a favicon.
-- [x] Check for JavaScript errors in the console.
-- [x] Remove all console.logs.
-
-#### Deployment process
-
-- [x] QA/Staging/UAT/Dev deployments before every Production release are a **must**. No matter if
-      it's a hotfix or if the PM is pushing. Unless everything is broken, please follow the rules.
-- [x] No Friday deploys. Inform your project manager not to rely on Friday deployments 😀
-- [x] Run the website through page insights /
-      [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/). (Run audits in
-      chrome)
 
 ## Development environment
 
@@ -492,21 +418,14 @@ Code linting / formatting:
 - [prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
-
-Styling Framework:
-
-- [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
 
 Collaborating:
 
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-- [Jira and Bitbucket (Official)](https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode)
 
 JS/TS Framework:
 
-- [Vetur (.vue)](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 - [Angular Schematics](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics)
 - [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
 - [React Snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
@@ -524,10 +443,7 @@ User settings.json:
 {
   "editor.formatOnSave": true,
   "editor.renderWhitespace": "all",
-  "editor.rulers": [100],
-  "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
-  "html.format.indentHandlebars": true,
   "html.format.wrapAttributes": "force-expand-multiline",
   "javascript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.importModuleSpecifier": "relative"
@@ -544,3 +460,11 @@ https://www.jetbrains.com/webstorm/
 - [Spellchecking](https://www.jetbrains.com/help/webstorm/spellchecking.html)
 - [String Manipulation](https://plugins.jetbrains.com/plugin/2162-string-manipulation)
 - [CamelCase](https://plugins.jetbrains.com/plugin/7160-camelcase)
+
+## DISCLAIMER
+
+This guide is inspired in first class industry standards and some other companies open source documents.
+Some references that made this guide possible:
+
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [Airbnb Js Coding Standards](https://github.com/airbnb/javascript/)
