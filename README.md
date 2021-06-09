@@ -1,4 +1,4 @@
-# Quadminds Technologies - Codign Standards
+# Quadminds Technologies - Coding Standards
 
 Quadminds Coding Standards is a collaborative repo of code guidelines with some of the team's conventions.
 
