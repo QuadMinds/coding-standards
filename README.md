@@ -415,9 +415,15 @@ Free code editor made by Microsoft. https://code.visualstudio.com/
 
 Code linting / formatting:
 
-- [prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-- [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [PHP Intellisense](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense)
+
+Code Completion:
+
+- [Tabnine AI] (https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
+- [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 
 Collaborating:
 
@@ -426,13 +432,10 @@ Collaborating:
 
 JS/TS Framework:
 
-- [Angular Schematics](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics)
-- [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
 - [React Snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 
 Miscellaneous:
-
-- [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [SQL Tools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)
 - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
 #### Recommended settings for VSCode
