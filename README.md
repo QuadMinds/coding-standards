@@ -5,7 +5,7 @@ Quadminds Coding Standards is a collaborative repo of code guidelines with some 
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Why Coding Standards?](#why-coding-standards?)
+2. [Why?](#why-coding-standards)
 3. [Naming](#naming)
 4. [Coding](#coding)
 5. [Formatting](#formatting)
@@ -251,7 +251,7 @@ Adding the comment makes it clear the developer did not forget to implement the 
 ## Formatting
 
 All code within a project should have the same formatting. To enforce that we use
-[Prettier](https://prettier.io/).
+[Prettier](https://prettier.io/) and [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) respectively.
 
 ## Comments
 
@@ -418,12 +418,13 @@ Code linting / formatting:
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [PHP Intellisense](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense)
+- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 
 Code Completion:
 
-- [Tabnine AI] (https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
+- [Tabnine AI](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
 - [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [Path intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
 Collaborating:
 
