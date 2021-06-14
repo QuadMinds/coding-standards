@@ -465,6 +465,9 @@ https://www.jetbrains.com/webstorm/
 - [String Manipulation](https://plugins.jetbrains.com/plugin/2162-string-manipulation)
 - [CamelCase](https://plugins.jetbrains.com/plugin/7160-camelcase)
 
+### SQL DB Manager
+- [DBeaver] (https://dbeaver.io/)
+
 ## DISCLAIMER
 
 This guide is inspired in first class industry standards and some other companies open source documents.
