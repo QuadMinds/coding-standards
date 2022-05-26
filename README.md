@@ -369,6 +369,7 @@ is suited for long term projects that need stable and maintainable code. Nest us
 #### React
 
 - [Formik](https://jaredpalmer.com/formik/) - Forms
+- [React Query]([https://jaredpalmer.com/formik/](https://react-query.tanstack.com/) - Fetch, cache and update data
 - [React Router](https://reacttraining.com/react-router/) - Router library for React
 - [react-i18next](https://react.i18next.com/) - Internationalization library for React
 - [react-intl](https://www.npmjs.com/package/react-intl) - Internationalization library for React
